@@ -1,0 +1,48 @@
+@import 'vendor/normalize.scss';
+@import 'variables.scss';
+@font-face {
+  font-family: "Roboto";
+  src: url('/assets/fonts/Roboto-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url('/assets/fonts/Roboto-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url('/assets/fonts/Roboto-Bold.ttf');
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Courier', monospace;
+  background-color: white;
+  font-weight: 500;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 1200px;
+  
+}
+
+
+li {
+  list-style-type: none;
+}
+
+ul { 
+  list-style: none;
+}
