@@ -1,0 +1,16 @@
+.hello {
+    background-color: #EEE;
+    padding-top: 72px;
+    padding-bottom: 108px;
+
+
+    &__title {
+        text-align: center;
+        color: #000;
+        font-size: 55px;
+        font-weight: 500;
+        line-height: 55px;
+        margin: 0;
+    }
+
+}

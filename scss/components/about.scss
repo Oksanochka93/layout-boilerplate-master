@@ -1,0 +1,177 @@
+.about {
+
+
+   &__wrapper {
+      padding-top: 39px;
+      padding-bottom: 75px;
+      border-top: 2px solid #EEEEEE;
+      border-bottom: 2px solid #EEEEEE;
+
+      @media (max-width: 1100px) {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding-bottom: 30px;
+     }
+   }
+
+   &__top {
+      @media (max-width: 1100px) {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         
+     }
+   }
+
+   &__bottom {
+      @media (max-width: 1100px) {
+         display: flex;         
+         align-items: center;        
+         gap: 45px;
+     }
+     @media (max-width: 768px) {
+     flex-direction: column;       
+      align-items: center;        
+      gap: 45px;
+  }
+   }
+
+   &__title {
+      color: #000;
+      font-size: 45px;
+      font-weight: 500;
+      line-height: 45px;
+      margin-bottom: 32px;
+
+      @media (max-width: 1100px) {
+       text-align: center;
+       font-size: 40px;
+       margin-top: 0;
+     }
+     @media (max-width: 576px) {
+       font-size: 23px;
+     }
+   }
+
+   &__descr {
+      color: #283136;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 40px;
+      @media (max-width: 1100px) {
+         text-align: center;
+       }
+       @media (max-width: 576px) {
+       font-size: 14px;
+       margin-bottom: 30px;
+       }
+   }
+
+   &__top {
+      background-image: url("../../assets/img/nerds-bg.png");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      padding-top: 38px;
+
+      @media (max-width: 1100px) {
+         background-image: none;
+         padding-top: 0;
+     }
+   }
+
+   &__bottom {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__subtitle {
+      color: #000;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      @media (max-width: 1100px) {
+         font-size: 15px;
+       }
+   }
+
+   &__products {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 23px;
+
+      @media (max-width: 576px) {
+       gap: 20px;
+      }
+   }
+
+   &__product {
+      color: #283136;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      @media (max-width: 1100px) {
+         font-size: 15px;
+       }
+
+      &::before {
+         content: "";
+         width: 25px;
+         height: 2px;
+         background: #FB565A;
+         @media (max-width: 1100px) {
+            width: 20px;
+          }
+      }
+   }
+
+   &__advantages {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 31px;
+      gap: 22px;
+
+   }
+
+   &__number {
+      color: #000;
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 64px;
+      margin-bottom: 11px;
+
+      @media (max-width: 1100px) {
+         font-size: 43px;
+       }
+       @media (max-width: 576px) {
+       font-size: 38px;
+       }
+
+      sup {
+         color: #000;
+         font-size: 26px;
+         font-weight: 700;
+         line-height: 40px;
+         
+      }
+
+
+   }
+
+   &__text {
+      color: #283136;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      @media (max-width: 576px) {
+       font-size: 14px;
+      }
+   }
+}

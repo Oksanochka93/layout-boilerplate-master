@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Магазин</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="index.html"><img src="assets/img/nerds-logo.svg" alt="логотип"></a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a href="index.html" class="header__link">студия</a></li>
+            <li class="header__item"><a href="#" class="header__link">клиенты</a></li>
+            <li class="header__item"><a href="shop.html" class="header__link header__link--current">магазин</a></li>
+            <li class="header__item"><a href="#" class="header__link">контакты</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="header__cart header__link">корзина</a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hello">
+      <div class="container">
+        <h1 class="hello__title">Магазин готовых шаблонов</h1>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="content__wrapper">
+          <div class="filters">
+            <form action="" class="filters__form">
+              <div class="filters__slider">
+                <h3 class="content__title">Стоимость:</h3>
+                <div class="custom-range">                  
+                  <div class="custom-range__container">
+                      <div class="custom-range__track"></div>
+                      <input  class="custom-range__range" type="range" min="0" max="20000" value="0" id="slider-1" oninput="slideOne()">
+                      <input class="custom-range__range" type="range" min="0" max="20000" value="15000" id="slider-2" oninput="slideTwo()">
+                  </div>
+              </div>
+              <div class="filters__inputs">
+                <div class="filters__input">
+                  <label for="range-1">От</label>
+                  <input type="text" id="range-1" value="0">
+                </div>
+                <div class="filters__input">
+                  <label for="">До</label>
+                  <input type="text" id="range-2" value="15000">
+                </div>
+              </div>
+                
+              </div>
+              <div class="filters__grid">
+                <h3 class="content__title">Сетка:</h3>
+                <ul class="filters__list">
+                  <li class="filters__item">
+                    <input class="custom-radio" name="grid" type="radio" id="adaptive" value="adaptive">
+                    <label for="adaptive">Адаптивная</label>
+                  </li>
+                  <li class="filters__item">
+                    <input class="custom-radio" name="grid" type="radio" id="fixed" value="fixed" disabled>
+                    <label for="fixed">Фиксированная</label>
+                  </li>
+                  <li class="filters__item">
+                    <input class="custom-radio" name="grid" type="radio" id="rubber" value="rubber">
+                    <label for="rubber">Резиновая</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="filters__characteristics">
+                <h3 class="content__title">Особенности:</h3>
+                <ul class="filters__list">
+                  <li class="filters__item">
+                    <input class="custom-checkbox" type="checkbox" name="characteristics" id="checkbox-1" value="slider">
+                    <label for="checkbox-1">Слайдер</label>
+                  </li>
+                  <li class="filters__item">
+                    <input class="custom-checkbox" type="checkbox" name="characteristics" id="checkbox-2" value="advantages" checked>
+                    <label for="checkbox-2">Блок преимуществ</label>
+                  </li>
+                  <li class="filters__item">
+                    <input class="custom-checkbox" type="checkbox" name="characteristics" id="checkbox-3" value="news">
+                    <label for="checkbox-3">Новости</label>
+                  </li>
+                  <li class="filters__item">
+                    <input class="custom-checkbox" type="checkbox" name="characteristics" id="checkbox-4" value="gallery" checked>
+                    <label for="checkbox-4">Галерея</label>
+                  </li>
+                  <li class="filters__item">
+                    <input class="custom-checkbox" type="checkbox" name="characteristics" id="checkbox-5" value="cart" disabled>
+                    <label for="checkbox-5">Корзина</label>
+                  </li>
+                </ul>
+
+
+              </div>
+              <button class="btn content__button" type="submit" >
+                Показать                
+              </button>
+              
+
+            </form>
+          </div>
+          <div class="content__main">
+            <div class="content__header">
+              <h3 class="content__title">Сортировать:</h3>
+              <ul class="content__list">
+                <li class="content__item content__item--current">по цене </li>
+                <li class="content__item">по типу</li>
+                <li class="content__item">по названию</li>
+              </ul>
+              <div class="content__arrows">
+                <div class="content__arrow content__arrow--down content__arrow--current"></div>
+                <div class="content__arrow content__arrow--up"></div>
+              </div>
+
+            </div>
+            <ul class="cards">
+              <li class="cards__card">
+                <div class="cards__shape">
+
+                </div>
+                <img src="assets/img/cards/sedona.png" alt="" class="cards__img">
+                <div class="cards__block">
+                  <h4 class="cards__title content__title">Sedona</h4>
+                  <p class="cards__descr">Информационный сайт для туристов</p>
+                  <a href="" class="cards__btn btn"><span>9000</span>₽</a>
+                </div>
+              </li>
+              <li class="cards__card">
+                <div class="cards__shape">
+
+                </div>
+                <img src="assets/img/cards/pink,png.png" alt="" class="cards__img">
+                <div class="cards__block">
+                  <h4 class="cards__title">Pink App</h4>
+                  <p class="cards__descr">Продуктовый лендингприложения для iOS и Android</p>
+                  <a href="" class="cards__btn btn"><span>9000</span>₽</a>
+                </div>
+              </li>
+              <li class="cards__card">
+                <div class="cards__shape">
+
+                </div>
+                <img src="assets/img/cards/barbershop.png" alt="" class="cards__img">
+                <div class="cards__block">
+                  <h4 class="cards__title">Borodinski</h4>
+                  <p class="cards__descr">Информационный сайт для туристов</p>
+                  <a href="" class="cards__btn btn"><span>9000</span>₽</a>
+                </div>
+              </li>
+              <li class="cards__card">
+                <div class="cards__shape">
+
+                </div>
+                <img src="assets/img/cards/mishka.png" alt="" class="cards__img">
+                <div class="cards__block">
+                  <h4 class="cards__title">Mishka</h4>
+                  <p class="cards__descr">Информационный сайт для туристов</p>
+                  <a href="" class="cards__btn btn"><span>9000</span>₽</a>
+                </div>
+              </li>
+              <li class="cards__card">
+                <div class="cards__shape">
+
+                </div>
+                <img src="assets/img/cards/aplus.png" alt="" class="cards__img">
+                <div class="cards__block">
+                  <h4 class="cards__title">Aplus</h4>
+                  <p class="cards__descr">Информационный сайт для туристов</p>
+                  <a href="" class="cards__btn btn"><span>9000</span>₽</a>
+                </div>
+              </li>
+              <li class="cards__card">
+                <div class="cards__shape">
+
+                </div>
+                <img src="assets/img/cards/kvast.png" alt="" class="cards__img">
+                <div class="cards__block">
+                  <h4 class="cards__title">Kvast</h4>
+                  <p class="cards__descr">Информационный сайт для туристов</p>
+                  <a href="" class="cards__btn btn"><span>9000</span>₽</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="pagination">
+              <li class="pagination__item"><a href="" class="pagination__link pagination__link--current">1</a></li>
+              <li class="pagination__item"><a href="" class="pagination__link">2</a></li>
+              <li class="pagination__item"><a href="" class="pagination__link">3</a></li>
+              <li class="pagination__item"><a href="" class="pagination__link pagination__link--next">Следующая</a></li>
+
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+  <footer class="footer">
+    <section class="map">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?ll=30.324468%2C59.938474&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.13"
+        frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+      <div class="container">
+        <div class="map__wrapper">
+          <div class="map__block">
+            <h3 class="map__title">NЁRDS DESIGN STUDIO</h3>
+            <address class="map__address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</address>
+            <a class="map__phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <a href="#" class="map__btn btn">Напишите нам</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="social">
+      <div class="container">
+        <div class="social__wrapper">
+          <ul class="social__links">
+            <li class="social__item"><a href="https://vk.com/" class="social__link"> <img
+                  class="social__icon social__icon--vk" src="assets/img/social/vk-icon.svg" alt="ссылка на сайт вк"></a>
+            </li>
+            <li class="social__item"> <a href="https://www.facebook.com/" class="social__link"> <img
+                  src="assets/img/social/fb-icon.svg" alt="ссылка на фейсбук" class="social__icon social__icon--fb"></a>
+            </li>
+            <li class="social__item"> <a href="https://www.instagram.com/" class="social__link"><img
+                  src="assets/img/social/insta-icon.svg" alt="ссылка на инстраграм"
+                  class="social__icon social__icon--inst"></a></li>
+
+          </ul>
+          <div class="social__text">
+            <h2 class="social__title">Давайте дружить, это выгодно!</h2>
+            <p class="social__descr">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

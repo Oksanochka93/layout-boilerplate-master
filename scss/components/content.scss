@@ -1,0 +1,106 @@
+.content {
+
+
+    padding-top: 55px;
+
+    &__title {
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+
+
+    &__button {
+        width: 260px;
+        border: none;
+        background: #EEE;
+        color: #000000;
+        padding-top: 0;
+
+
+        &:hover {
+            background: #DFDFDF;
+        }
+
+        &:active {
+            background: #D5D5D5;
+            color: rgba($color: #000000, $alpha: 0.3);
+        }
+
+    }
+
+    &__main {
+        width: 100%;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 140px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        gap: 25px;
+        margin-left: auto;
+    }
+
+    &__item {
+        color: #000;        
+        font-size: 14px;       
+        font-weight: 400;
+        line-height: 18px;    
+        text-transform: uppercase;
+        opacity: 0.3;
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active,&--current {
+            opacity: 1;
+        }
+        
+    }
+
+    &__arrows {
+        display: flex;
+        gap: 18px;
+        margin-left: 47px;
+
+    }
+
+   &__arrow{
+    width: 11px;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10' fill='none'%3E%3Cpath d='M5.5 10L0 0H11' fill='%23231F20'/%3E%3C/svg%3E");
+    cursor: pointer;
+    opacity: 0.2;
+    transition: opacity 0.3s;
+    &--up {
+        rotate: 180deg;
+        
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:active,&--current {
+        opacity: 1;
+    }
+
+
+   }
+
+
+}

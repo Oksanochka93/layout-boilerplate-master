@@ -1,5 +1,31 @@
 @import 'vendor/normalize.scss';
 @import 'variables.scss';
+// малые компоненты 
+@import "components/btn.scss";
+@import "components/custom-radio.scss";
+@import "components/custom-checkbox.scss";
+@import "components/custom-range.scss";
+@import "components/pagination.scss";
+
+
+// большие компоненты
+@import "components/header.scss";
+@import "components/slider.scss";
+@import "components/products.scss";
+@import "components/about.scss";
+@import "components/projects.scss";
+@import "components/footer.scss";
+@import "components/map.scss";
+@import "components/social.scss";
+@import "components/modal.scss" ;
+@import "components/hello.scss";
+@import "components/filters.scss";
+@import "components/content.scss";
+@import "components/cards.scss";
+
+
+
+
 @font-face {
   font-family: "Roboto";
   src: url('/assets/fonts/Roboto-Medium.ttf');
@@ -22,10 +48,13 @@ body {
   font-family: 'Roboto', 'Courier', monospace;
   background-color: white;
   font-weight: 500;
+  color: #000;
 }
+
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -34,7 +63,7 @@ body {
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
-  width: 1200px;
+  max-width: 1200px;
   
 }
 
@@ -45,4 +74,9 @@ li {
 
 ul { 
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  
 }
